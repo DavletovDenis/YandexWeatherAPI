@@ -48,6 +48,8 @@ def get_weather(lat: str, lon: str):
     print('Атмосферное давление =', fact['pressure_mm'], 'мм рт. ст.')
     print('Влажность воздуха =', str(fact['humidity']) + '%')
 
-lat = input('Введите широту : ')
-lon = input('Введите долготу : ')
-get_weather(lat, lon)
+    
+if __name__ == "__main__":
+    lat = input('Введите широту : ')
+    lon = input('Введите долготу : ')
+    get_weather(lat, lon)
